@@ -107,7 +107,7 @@ public class AttractionActivity extends Activity{
         preferences();
         Base_Url=getString(R.string.Base_Url);
 
-        Result.setVisibility(View.GONE);
+        Result.setVisibility(View.VISIBLE);
         progressBar.setVisibility(View.VISIBLE);
         getData();
         Back.setOnClickListener(new View.OnClickListener() {
