@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RestaurantsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:layout_marginTop="-10dp">
+
+        <ImageView
+            android:id="@+id/ResDealsHeader"
+            android:layout_width="match_parent"
+            android:layout_height="201dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/restaurant_deals_header" />
+
+        <ImageView
+            android:id="@+id/SufraIcon"
+            android:layout_width="69dp"
+            android:layout_height="57dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:src="@drawable/sufra" />
+
+        <ImageView
+            android:id="@+id/Icon"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignBottom="@+id/SufraIcon"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/Share"
+            android:layout_toStartOf="@+id/Share"
+            android:src="@drawable/call_symbol" />
+
+        <ImageView
+            android:id="@+id/Share"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Icon"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/share_button" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RestaurantsBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RestaurantsHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/LocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="16dp"
+            android:text="Al Rainbow St 26"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/placeholder"
+            android:id="@+id/Placeholder"/>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/TextProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="47dp"
+            android:text="OFFERS CONTSINED IN PRODUCT"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/YearText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="65dp"
+            android:text="AMMAN ALL OFFERS 2017"
+            android:textColor="#454553" />
+
+        <RelativeLayout
+            android:id="@+id/border"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/YearText"
+            android:layout_marginTop="12dp"
+            android:background="#E6E6E6"></RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RestaurantsHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp">
+
+    </RelativeLayout>
+</RelativeLayout>

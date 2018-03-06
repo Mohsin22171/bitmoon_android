@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec1">
+
+        <TextView
+            android:id="@+id/FoodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="My Information"
+            android:textColor="@color/colorHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/MapText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:text="Update"
+            android:textColor="@color/colorHighlight"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="16dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/back" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scroll_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+    <RelativeLayout
+        android:id="@+id/layout_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scroll_information">
+
+    <TextView
+        android:id="@+id/fname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FIRST NAME"
+        android:textColor="#454553"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:id="@+id/fname_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muhammad"
+        android:textStyle="normal"
+        android:layout_alignBaseline="@+id/fname_label"
+        android:layout_alignBottom="@+id/fname_label"
+        android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/lock1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/lock"
+            android:layout_marginRight="20dp"/>
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6E6E6"
+        android:layout_below="@+id/fname_label"/>
+
+    <TextView
+        android:id="@+id/lname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAST NAME"
+        android:textColor="#454553"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/View1"/>
+
+    <TextView
+        android:id="@+id/lname_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mohsin"
+        android:textStyle="normal"
+        android:layout_alignBaseline="@+id/lname_label"
+        android:layout_alignBottom="@+id/lname_label"
+        android:layout_alignLeft="@+id/email_txt"
+        android:layout_alignStart="@+id/email_txt" />
+
+        <ImageView
+            android:id="@+id/lock2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/lock"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/View1"/>
+
+    <View
+        android:id="@+id/View2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6E6E6"
+        android:layout_below="@+id/lname_label"/>
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMAIL"
+        android:textColor="#454553"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/View2"/>
+
+    <TextView
+        android:id="@+id/email_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m.mohsin@sigbl.com"
+        android:textStyle="normal"
+        android:layout_alignBaseline="@+id/email_label"
+        android:layout_alignBottom="@+id/email_label"
+        android:layout_alignLeft="@+id/fname_txt"
+        android:layout_alignStart="@+id/fname_txt" />
+
+        <ImageView
+            android:id="@+id/lock3"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/lock"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/View2"/>
+
+    <View
+        android:id="@+id/View3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6E6E6"
+        android:layout_below="@+id/email_label"/>
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textColor="#454553"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/View3"/>
+
+    <EditText
+        android:id="@+id/date_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/email_txt"
+        android:layout_alignStart="@+id/email_txt"
+        android:layout_below="@+id/View3"
+        android:layout_marginTop="9dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="DD-MM-YYYY" />
+
+    <View
+        android:id="@+id/View4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E6E6E6"
+        android:layout_below="@+id/date_txt"
+        android:layout_marginTop="5dp"/>
+
+
+
+    <TextView
+        android:id="@+id/residence_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country of Residence"
+        android:textColor="#454553"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/View4"/>
+
+    <Spinner
+        android:id="@+id/spinner_country"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/residence_label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buy_field" />
+
+    <TextView
+        android:id="@+id/mobile_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number"
+        android:textColor="#454553"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/spinner_country"/>
+
+        <EditText
+            android:id="@+id/mobile_txt"
+            android:layout_width="370dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/switch1"
+            android:layout_alignRight="@+id/switch1"
+            android:layout_below="@+id/mobile_label"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/mobile_field"
+            android:hint="Mobile Number"
+            android:paddingLeft="15dp"
+            android:layout_marginRight="5dp"/>
+
+
+    <TextView
+        android:id="@+id/currency_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Currency preference"
+        android:textColor="#454553"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/mobile_txt"
+        android:cursorVisible="false"/>
+
+    <Spinner
+        android:id="@+id/spinner_currency"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/currency_label"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/buy_field" />
+
+    <TextView
+        android:id="@+id/rcv_txt_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive Bitmoon Emails?"
+        android:textColor="#454553"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/spinner_currency"
+        android:textSize="17sp"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/date_txt"
+        android:layout_alignRight="@+id/date_txt"
+        android:layout_alignTop="@+id/rcv_txt_1"
+        android:theme="@style/SwitchTheme"/>
+
+    <TextView
+        android:id="@+id/rcv_txt_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receive Push Notifications?"
+        android:textColor="#454553"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/switch1"
+        android:textSize="17sp"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/date_txt"
+        android:layout_alignRight="@+id/date_txt"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="15dp"
+        android:theme="@style/SwitchTheme"/>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

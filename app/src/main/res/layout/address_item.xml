@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout">
+
+    <ImageView
+        android:id="@+id/Placeholder"
+        android:layout_width="20dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:src="@drawable/placeholder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:text="Al Rainbow"
+        android:layout_marginTop="6dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Placeholder"
+        android:layout_toEndOf="@+id/Placeholder" />
+
+    <TextView
+        android:id="@+id/street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_alignLeft="@+id/address"
+        android:layout_alignStart="@+id/address"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignTop="@+id/address"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

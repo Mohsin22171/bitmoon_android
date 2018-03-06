@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:id="@+id/purchase_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="310dp">
+
+
+        <ImageView
+            android:id="@+id/purchase_header"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:src="@drawable/purchase_header" />
+
+        <TextView
+            android:id="@+id/purchase_detail_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/purchase_header"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Sufra is guranteed to be good every time. We came from Shabeek Center for Intercultural Development with employees and their families"
+            android:textColor="#454553" />
+
+        <TextView
+            android:id="@+id/purchase_price"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/purchase_detail_text"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="USD 16"
+            android:textColor="#29ABE1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/purchase_body"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/pur_rec"
+        android:layout_below="@+id/purchase_header_layout">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Enjoy over 2800"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Buy one get one free"
+            android:gravity="center"
+            android:layout_below="@+id/text1"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Casulal Dinning, Cafes, Informal Dinning, Attractions &amp; Leisure, Retail"
+            android:textColor="#000"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="50dp"/>
+
+        <View
+            android:id="@+id/pur_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_below="@+id/text3"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/pur_line1"
+            android:text="Over JOD 500,000 in savings"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+        <View
+            android:id="@+id/pur_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_below="@+id/text4"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Includes Hotels Worldwide"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_below="@+id/pur_line2"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <!--  Recycler View  -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="185dp"
+        android:layout_below="@+id/purchase_body"
+        android:scrollbars="none" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rec_buy2">
+
+    <EditText
+        android:id="@+id/card_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="NAME ON CARD"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:selectAllOnFocus="false"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="CREDIT CARD NUMBER"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:selectAllOnFocus="false"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/card_name"/>
+
+    <Spinner
+        android:id="@+id/month_spinner"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/card_number"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner_background" />
+
+    <Spinner
+        android:id="@+id/year_spinner"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:background="@drawable/spinner_background"
+        android:layout_alignTop="@+id/month_spinner"
+        android:layout_alignRight="@+id/card_number"
+        android:layout_alignEnd="@+id/card_number" />
+
+    <!--<ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cvv_txt"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/month_spinner"
+        android:layout_alignLeft="@+id/month_spinner"
+        android:layout_alignStart="@+id/month_spinner"
+        android:id="@+id/imageView" />-->
+
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/cvv_txt"
+        android:layout_alignTop="@+id/cvv_image"
+        android:layout_alignLeft="@+id/month_spinner"
+        android:layout_alignStart="@+id/month_spinner"
+        android:layout_marginTop="10dp"
+        android:hint="    CVV"/>
+
+    <ImageView
+        android:id="@+id/cvv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cvv_image"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/month_spinner"
+        android:layout_alignRight="@+id/month_spinner"
+        android:layout_alignEnd="@+id/month_spinner" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cvv_image"
+        android:layout_marginTop="20dp"
+        android:background="#29ABE1"
+        android:text="CONFIRM &amp; BUY"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+
+
+
+
+</RelativeLayout>

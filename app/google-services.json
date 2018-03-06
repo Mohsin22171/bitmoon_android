@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "979013856095",
+    "project_id": "pushnotify-195711"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979013856095:android:d806a34990889a85",
+        "android_client_info": {
+          "package_name": "com.example.mohsin.pushnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "979013856095-0avnq7pumelcjrle81d23mt1vs57ee47.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBX7ftUxrucKl-kaUkhlLhb5T86sZEjZr8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

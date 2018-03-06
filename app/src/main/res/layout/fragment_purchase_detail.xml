@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:background="@drawable/rec_details">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="AMMAN"
+            android:textColor="@android:color/background_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Sufra Restaurant, Al Rainbow St 26, Amman Jordan"
+            android:textColor="#454553"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:text="Sufra is guranteed to be good every time. We came from Shababeek Center for Intercultural Development with employees and their families"
+            android:textColor="#454553"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

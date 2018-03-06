@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/type_text"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Cuisine"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#95989A"
+        android:layout_below="@+id/type_text"
+        android:id="@+id/view5" />
+
+    <ListView
+        android:id="@+id/List_popup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#fff"
+        android:layout_below="@+id/type_text"
+        android:layout_marginTop="10dp"></ListView>
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:text="Done"
+        android:textColor="#000"
+        android:layout_above="@+id/view5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

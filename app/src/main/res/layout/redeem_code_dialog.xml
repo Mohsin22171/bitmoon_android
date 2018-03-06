@@ -1,0 +1,262 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="440dp"
+    android:background="@drawable/custom_dialog_shape"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/cross"
+        android:layout_alignParentRight="true"/>
+
+    <RelativeLayout
+        android:id="@+id/inner_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/inner">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/sufra" />
+
+        <TextView
+            android:id="@+id/text_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/text_body"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/text_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:id="@+id/estimated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/logo"
+            android:layout_alignRight="@+id/logo"
+            android:layout_below="@+id/text_body"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="18dp"
+            android:text="Estimated Savings:"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/estimated"
+            android:layout_alignTop="@+id/estimated"
+            android:layout_toRightOf="@+id/estimated"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/redeem"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/usd"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="#40403A"
+            android:text="Redeem"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/inner_dialog2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignEnd="@+id/inner_dialog"
+        android:layout_alignRight="@+id/inner_dialog"
+        android:layout_alignTop="@+id/inner_dialog"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/inner">
+
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:src="@drawable/sufra" />
+
+        <TextView
+            android:id="@+id/text_head2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Main Course"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/member_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/logo2"
+            android:layout_alignRight="@+id/logo2"
+            android:layout_below="@+id/text_head2"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:layout_marginTop="15dp"
+            android:text="Member:"
+            android:textColor="#29ABE1" />
+
+        <TextView
+            android:id="@+id/member_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/member_txt"
+            android:layout_alignBottom="@+id/member_txt"
+            android:layout_alignLeft="@+id/logo2"
+            android:layout_alignStart="@+id/logo2"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:text="M.Mohsin"
+            android:textColor="#29ABE1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/inner_dialog3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inner_dialog2"
+        android:background="#29ABE1">
+
+
+        <TextView
+            android:id="@+id/redemption_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="Please enter PIN to confirm redemption"
+            android:textColor="#fff" />
+
+
+        <EditText
+            android:id="@+id/digit1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/redemption_txt"
+            android:layout_alignStart="@+id/redemption_txt"
+            android:layout_centerVertical="true"
+            android:background="#fff"
+            android:maxLength="1"
+            android:paddingLeft="20dp"
+            android:inputType="numberPassword"/>
+
+        <EditText
+            android:id="@+id/digit2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/digit1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/digit1"
+            android:layout_toRightOf="@+id/digit1"
+            android:background="#fff"
+            android:maxLength="1"
+            android:paddingLeft="20dp"
+            android:inputType="numberPassword"/>
+
+        <EditText
+            android:id="@+id/digit3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/digit1"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/digit2"
+            android:layout_toRightOf="@+id/digit2"
+            android:background="#fff"
+            android:maxLength="1"
+            android:paddingLeft="20dp"
+            android:inputType="numberPassword"/>
+
+        <EditText
+            android:id="@+id/digit4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/digit1"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/digit3"
+            android:layout_toRightOf="@+id/digit3"
+            android:background="#fff"
+            android:maxLength="1"
+            android:paddingLeft="20dp"
+            android:inputType="numberPassword"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bitmoon_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cancel"
+        android:layout_centerHorizontal="true"
+        android:text="BITMOON"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rules_txt1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:text="Offers are subject to Rules of Use"
+        android:textColor="#fff"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/rule_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/review"
+        android:textColor="#fff" />
+
+
+</RelativeLayout>

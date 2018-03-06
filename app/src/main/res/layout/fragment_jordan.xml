@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/location_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Location"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#29ABE1"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/country_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jordan"
+        android:layout_below="@+id/location_select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/country_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JORDAN"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/country_flag"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/next_icon"
+        android:id="@+id/next_icon"
+        android:layout_alignTop="@+id/country_flag"
+        android:layout_toRightOf="@+id/location_select"
+        android:layout_toEndOf="@+id/location_select"
+        android:layout_marginTop="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/country_text"
+        android:layout_marginTop="-5dp">
+
+        <TextView
+            android:id="@+id/city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Select City"
+            android:textColor="#454553"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/city1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city_text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:text="AMMAN"
+            android:textColor="#454553"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/city1"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/city2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/city1"
+            android:layout_alignStart="@+id/city1"
+            android:layout_below="@+id/view3"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:text="JERASH"
+            android:textColor="#454553"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/city2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/city3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/city1"
+            android:layout_alignStart="@+id/city1"
+            android:layout_below="@+id/line2"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:text="IRBID"
+            android:textColor="#454553"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/city3"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/city4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/city1"
+            android:layout_alignStart="@+id/city1"
+            android:layout_below="@+id/line3"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:text="MADABA"
+            android:textColor="#454553"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/city4"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/city5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/city1"
+            android:layout_alignStart="@+id/city1"
+            android:layout_below="@+id/line4"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:text="AQABA"
+            android:textColor="#454553"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/city5"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:background="#29ABE1"
+        android:text="DONE"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:id="@+id/done" />
+
+</RelativeLayout>

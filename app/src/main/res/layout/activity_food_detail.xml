@@ -1,0 +1,83 @@
+<LinearLayout
+    android:id="@+id/main_layout"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rec1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/restaurants"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:text="Sufra Restaurants"
+                android:textColor="@color/colorHighlight"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/star" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:layout_margin="-50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:onClick="FuncBack"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- our toolbar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-45dp" />
+
+    <!-- our tablayout to display tabs  -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIndicatorColor="@color/colorFocus1"
+        app:tabSelectedTextColor="@color/colorFocus1"
+        app:tabTextColor="@color/colorFocus" />
+
+    <!-- View pager to swipe views -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="550dp" />
+
+</LinearLayout>

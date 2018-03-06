@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <RelativeLayout
+       android:id="@+id/buy_header"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/rec1">
+
+      <TextView
+          android:id="@+id/FoodText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_centerVertical="true"
+          android:text="Buy Now"
+          android:textColor="@color/colorHighlight"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+
+
+      <TextView
+          android:id="@+id/CancelText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:layout_centerInParent="true"
+          android:layout_marginRight="35px"
+          android:text="Cancel"
+          android:textColor="@color/colorHighlight"
+          android:textSize="12sp" />
+   </RelativeLayout>
+
+   <ListView
+       android:id="@+id/buy_list"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_below="@+id/buy_header"
+       android:divider="#fff"
+       android:layout_above="@+id/checkout_btn"></ListView>
+
+   <Button
+       android:id="@+id/checkout_btn"
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentStart="true"
+       android:background="#29ABE1"
+       android:text="CHECKOUT USD 11.99"
+       android:textColor="#fff"
+       android:textSize="16sp"
+       android:textStyle="bold" />
+
+
+</RelativeLayout>

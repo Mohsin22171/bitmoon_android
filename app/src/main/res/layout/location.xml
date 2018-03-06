@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/location_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Location"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#29ABE1"
+        android:textStyle="bold"/>
+
+   <!-- <ImageView
+        android:id="@+id/country_flag"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/location_select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/egypt" />-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/country_flag"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/location_select"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/egypt"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fff"/>
+
+    <TextView
+        android:id="@+id/country_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/country_flag"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/next_icon"
+        android:id="@+id/next_icon"
+        android:layout_alignTop="@+id/country_flag"
+        android:layout_toRightOf="@+id/location_select"
+        android:layout_toEndOf="@+id/location_select"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:id="@+id/prev_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/prev_icon"
+        android:layout_toLeftOf="@+id/country_text"
+        android:layout_alignTop="@+id/country_flag"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@+id/location_select"/>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/country_text"
+        android:layout_marginTop="-5dp">
+
+        <TextView
+            android:id="@+id/city_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Select City"
+            android:textColor="#454553"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/progress"
+            android:layout_marginTop="10dp"
+            android:divider="#fff"></ListView>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_progress"
+            android:layout_below="@+id/city_text"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:background="#29ABE1"
+        android:text="DONE"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:id="@+id/done" />
+
+</RelativeLayout>

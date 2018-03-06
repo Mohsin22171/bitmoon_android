@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <RelativeLayout
+        android:id="@+id/RestaurantsBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RestaurantsHeader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:id="@+id/ImageHeader"
+            android:layout_width="500dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="-10dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/HeaderIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/food_offers_list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#fff"/>
+
+        <ImageView
+            android:id="@+id/Icon"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/call_symbol"
+            android:layout_alignBottom="@+id/HeaderIcon"
+            android:layout_toLeftOf="@+id/Share"
+            android:layout_toStartOf="@+id/Share"
+            android:layout_marginBottom="7dp" />
+
+        <ImageView
+            android:id="@+id/Share"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/Icon"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/share_button" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/food_offers_list"
+            android:layout_below="@+id/ImageHeader"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="7dp"></ListView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

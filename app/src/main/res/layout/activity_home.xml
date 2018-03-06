@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/main"
+    android:layoutDirection="rtl">
+
+    <RelativeLayout
+        android:id="@+id/home_header"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/rec1"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="300dp" />
+
+        <Button
+            android:id="@+id/drop"
+            android:layout_width="15dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/drop" />
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings_tool"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/home_header"
+        android:id="@+id/scrollView2">
+
+
+        <RelativeLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/location_image"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-20dp"
+                android:background="@color/image_color"/>
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/location_image"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:paddingBottom="70dp"
+                android:paddingStart="100dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="70dp"
+                android:src="@drawable/next_slider"/>
+
+            <RelativeLayout
+                android:id="@+id/home_slider"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="#fff">
+                
+                <View
+                    android:id="@+id/View1"
+                    android:layout_width="240dp"
+                    android:layout_height="70dp"
+                    android:background="#00AB8E" />
+
+                <TextView
+                    android:id="@+id/usd_saved"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="120dp"/>
+
+                <TextView
+                    android:id="@+id/usd_saved_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USD SAVED THIS YEAR"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:layout_marginRight="38dp"
+                    android:layout_marginEnd="38dp"
+                    android:layout_below="@+id/usd_saved"
+                    android:layout_toLeftOf="@+id/dollar_icon"
+                    android:layout_toStartOf="@+id/dollar_icon" />
+
+                <View
+                    android:id="@+id/View2"
+                    android:layout_width="240dp"
+                    android:layout_height="70dp"
+                    android:background="#FFCC00"
+                    android:layout_below="@+id/View1"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:id="@+id/usd_saved2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:layout_above="@+id/usd_saved_year2"
+                    android:layout_marginStart="120dp" />
+
+                <TextView
+                    android:id="@+id/usd_saved_year2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:text="POINTS EARNED"
+                    android:textColor="#fff"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_above="@+id/View3"
+                    android:layout_alignLeft="@+id/usd_saved_year"
+                    android:layout_alignStart="@+id/usd_saved_year" />
+
+                <View
+                    android:id="@+id/View3"
+                    android:layout_width="240dp"
+                    android:layout_height="70dp"
+                    android:background="#B910FF"
+                    android:layout_below="@+id/View2"
+                    android:layout_marginTop="2dp"/>
+
+                <TextView
+                    android:id="@+id/usd_saved3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:layout_above="@+id/usd_saved_year3"
+                    android:layout_alignLeft="@+id/usd_saved2"
+                    android:layout_alignStart="@+id/usd_saved2" />
+
+                <TextView
+                    android:id="@+id/usd_saved_year3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LEVELS"
+                    android:textSize="12sp"
+                    android:textColor="#fff"
+                    android:layout_alignBottom="@+id/prev"
+                    android:layout_alignLeft="@+id/usd_saved_year2"
+                    android:layout_alignStart="@+id/usd_saved_year2"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginStart="17dp" />
+
+                <ImageView
+                    android:id="@+id/usd_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:src="@drawable/usd_icon"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/View1"
+                    android:layout_toEndOf="@+id/View1" />
+
+                <ImageView
+                    android:id="@+id/dollar_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:src="@drawable/dollar_icon"
+                    android:layout_alignTop="@+id/View2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/View2"
+                    android:layout_toEndOf="@+id/View2" />
+
+                <ImageView
+                    android:id="@+id/reward_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ticket_icon"
+                    android:layout_alignTop="@+id/View3"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toRightOf="@+id/View3"
+                    android:layout_toEndOf="@+id/View3" />
+
+                <ImageView
+                    android:id="@+id/prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="70dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="100dp"
+                    android:paddingTop="70dp"
+                    android:src="@drawable/prev_slider" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/food_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="230dp"
+                android:src="@drawable/food_icon"
+                android:layout_marginStart="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+
+            <ImageView
+                android:id="@+id/beauty_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/beauty_icon"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_alignTop="@+id/food_icon"
+                android:layout_toRightOf="@+id/food_icon"
+                android:layout_toEndOf="@+id/food_icon" />
+
+            <ImageView
+                android:id="@+id/attraction_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/attraction_icon"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_alignTop="@+id/beauty_icon"
+                android:layout_toRightOf="@+id/beauty_icon"
+                android:layout_toEndOf="@+id/beauty_icon" />
+
+            <ImageView
+                android:id="@+id/retail_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/retial_icon"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_alignTop="@+id/attraction_icon"
+                android:layout_toRightOf="@+id/attraction_icon"
+                android:layout_toEndOf="@+id/attraction_icon" />
+
+            <ImageView
+                android:id="@+id/hotel_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hotels_icon"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_alignTop="@+id/retail_icon"
+                android:layout_toRightOf="@+id/retail_icon"
+                android:layout_toEndOf="@+id/retail_icon" />
+
+            <TextView
+                android:id="@+id/food_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="طعام شراب"
+                android:layout_marginTop="10dp"
+                android:textSize="11sp"
+                android:layout_below="@+id/food_icon"
+                android:layout_alignRight="@+id/food_icon"
+                android:layout_alignEnd="@+id/food_icon" />
+
+            <TextView
+                android:id="@+id/beauty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="Beauty &amp; \n  Fitness"
+                android:textSize="11sp"
+                android:layout_alignBaseline="@+id/food_text"
+                android:layout_alignBottom="@+id/food_text"
+                android:layout_alignRight="@+id/beauty_icon"
+                android:layout_alignEnd="@+id/beauty_icon" />
+
+            <TextView
+                android:id="@+id/attraction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="Attractions  \n  Leisure"
+                android:textSize="11sp"
+                android:layout_alignBaseline="@+id/beauty_text"
+                android:layout_alignBottom="@+id/beauty_text"
+                android:layout_alignLeft="@+id/attraction_icon"
+                android:layout_alignStart="@+id/attraction_icon" />
+
+            <TextView
+                android:id="@+id/retail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="خدمات التجزئة"
+                android:textSize="11sp"
+                android:layout_alignBaseline="@+id/attraction_text"
+                android:layout_alignBottom="@+id/attraction_text"
+                android:layout_toLeftOf="@+id/hotel_icon"
+                android:layout_toStartOf="@+id/hotel_icon" />
+
+            <TextView
+                android:id="@+id/hotels_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="    Hotels &amp;\n     Travel"
+                android:textSize="11sp"
+                android:layout_alignBaseline="@+id/retail_text"
+                android:layout_alignBottom="@+id/retail_text"
+                android:layout_alignLeft="@+id/hotel_icon"
+                android:layout_alignStart="@+id/hotel_icon" />
+
+            <TextView
+                android:id="@+id/header1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/food_text"
+                android:layout_marginBottom="-5dp"
+                android:layout_marginTop="20dp"
+                android:background="#E1E1E1"
+                android:gravity="center"
+                android:text="Indulge Your Self"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <!--  Recycler View  -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="fill_parent"
+                android:layout_height="185dp"
+                android:layout_below="@+id/header1"
+                android:scrollbars="none" />
+
+
+            <TextView
+                android:id="@+id/header2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/recycler_view"
+                android:layout_marginBottom="-10dp"
+                android:background="#E1E1E1"
+                android:gravity="center"
+                android:text="Our Picks"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view2"
+                android:layout_width="fill_parent"
+                android:layout_height="185dp"
+                android:scrollbars="none"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/header2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_progress"
+                android:layout_below="@+id/attraction_icon"
+                android:layout_alignLeft="@+id/attraction_icon"
+                android:layout_alignStart="@+id/attraction_icon" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp"
+        android:textColor="#fff"
+        android:layout_above="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

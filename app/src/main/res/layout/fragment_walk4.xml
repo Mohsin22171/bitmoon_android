@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/walk_4">
+
+    <RelativeLayout
+        android:id="@+id/WalkBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Discover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REDEEM"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Redeeming your offer is quick and simple. Enter your pin to start the process."
+            android:layout_marginTop="19dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_below="@+id/Discover"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

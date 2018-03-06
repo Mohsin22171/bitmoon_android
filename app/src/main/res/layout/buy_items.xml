@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="14dp"
+        android:text="Sub Total"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD 11.99"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/total"
+        android:layout_alignBottom="@+id/total"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#6B6565"
+        android:layout_below="@id/total_price"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>

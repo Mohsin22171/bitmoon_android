@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/food_icon"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/melograno"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/food_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="Sufra Restaurant"
+        android:textSize="16sp"
+        android:textColor="#454553"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/food_icon"
+        android:layout_toStartOf="@+id/food_icon" />
+
+    <TextView
+        android:id="@+id/food_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:text="address"
+        android:layout_below="@+id/food_hotel"
+        android:layout_alignLeft="@+id/food_hotel"
+        android:layout_alignStart="@+id/food_hotel"
+        android:layout_marginTop="4dp"
+        android:textSize="13sp"
+        android:textColor="#454553"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/food_kilometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/food_address"
+        android:layout_alignLeft="@+id/food_address"
+        android:layout_alignStart="@+id/food_address"
+        android:layout_marginTop="6dp"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/placeholder"
+        android:layout_alignTop="@+id/food_address"
+        android:layout_alignLeft="@+id/food_hotel"
+        android:layout_alignStart="@+id/food_hotel" />
+
+
+</RelativeLayout>

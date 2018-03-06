@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec1">
+
+        <TextView
+            android:id="@+id/FoodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Create PIN"
+            android:textColor="@color/colorHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+       <TextView
+            android:id="@+id/Map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/colorHighlight"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/colorHighlight"
+            android:textSize="12sp"
+            android:text="Save"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="16dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Create a PIN. You will use it to securely redeem offers"
+            android:textColor="#454553"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textSize="16sp"/>
+
+
+        <EditText
+            android:id="@+id/digit1"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:background="@drawable/pin_back"
+            android:maxLength="1"
+            android:paddingLeft="25dp"
+            android:inputType="numberPassword"
+            android:layout_marginTop="61dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/text"
+            android:layout_alignLeft="@+id/text"
+            android:layout_alignStart="@+id/text"
+            android:hint="*" />
+
+        <EditText
+            android:id="@+id/digit2"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignTop="@+id/digit1"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/digit1"
+            android:layout_toRightOf="@+id/digit1"
+            android:background="@drawable/pin_back"
+            android:maxLength="1"
+            android:paddingLeft="25dp"
+            android:inputType="numberPassword"
+            android:hint="*"/>
+
+        <EditText
+            android:id="@+id/digit3"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignTop="@+id/digit1"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/digit2"
+            android:layout_toRightOf="@+id/digit2"
+            android:background="@drawable/pin_back"
+            android:maxLength="1"
+            android:paddingLeft="25dp"
+            android:inputType="numberPassword"
+            android:hint="*" />
+
+        <EditText
+            android:id="@+id/digit4"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignTop="@+id/digit1"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/digit3"
+            android:layout_toRightOf="@+id/digit3"
+            android:background="@drawable/pin_back"
+            android:maxLength="1"
+            android:paddingLeft="25dp"
+            android:inputType="numberPassword"
+            android:hint="*" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pin_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/header"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:layout_marginTop="92dp" />
+
+</RelativeLayout>

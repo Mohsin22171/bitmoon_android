@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/share_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec1">
+
+        <TextView
+            android:id="@+id/FoodText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Sufra Restaurant"
+            android:textColor="@color/colorHighlight"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/MapText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35px"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorHighlight"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="16dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/back" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/body"
+        android:layout_below="@+id/share_header">
+
+        <ImageView
+            android:id="@+id/share_image_header"
+            android:layout_width="500dp"
+            android:layout_height="180dp"
+            android:background="@drawable/restaurant_deals_header"></ImageView>
+
+        <ImageView
+            android:id="@+id/share_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:src="@drawable/sufra" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Fancy going to Sufra Restaurants today?"
+            android:layout_below="@+id/share_image_header"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#29ABE1"
+            android:textStyle="bold"
+            android:id="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/line_share"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/line_a"
+            android:layout_below="@+id/share_image_header"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"/>
+
+        <ImageView
+            android:id="@+id/messenger_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/messenger"
+            android:layout_below="@+id/line_share"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/messenger_text_share"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="MESSENGER"
+            android:layout_below="@id/messenger_share"
+            android:gravity="center"
+            android:textColor="#545454"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6E6E6"
+            android:layout_below="@id/messenger_text_share"/>
+
+        <ImageView
+            android:id="@+id/sms_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sms"
+            android:layout_below="@+id/view"
+            android:layout_alignLeft="@+id/messenger_share"
+            android:layout_alignStart="@+id/messenger_share"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/sms_text_share"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="SMS"
+            android:layout_below="@id/sms_share"
+            android:gravity="center"
+            android:textColor="#545454"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E6E6E6"
+            android:layout_below="@id/sms_text_share"/>
+
+        <ImageView
+            android:id="@+id/whatsapp_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/whatsapp"
+            android:layout_marginTop="14dp"
+            android:layout_below="@+id/view2"
+            android:layout_alignLeft="@+id/sms_share"
+            android:layout_alignStart="@+id/sms_share" />
+
+        <TextView
+            android:id="@+id/whatsapp_text_share"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="WHATSAPP"
+            android:layout_below="@id/whatsapp_share"
+            android:gravity="center"
+            android:textColor="#545454"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/CountryPreference"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="16dp"
+            android:text="Currency preference"
+            android:textColor="#454553" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="370dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/CountryPreference"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/buy_field" />
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/spinner"
+            android:layout_marginTop="10dp"
+            android:background="#EBEBEB" />
+
+        <TextView
+            android:id="@+id/product_details"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/View1"
+            android:layout_alignLeft="@+id/CountryPreference"
+            android:layout_alignStart="@+id/CountryPreference"
+            android:layout_marginBottom="12dp"
+            android:text="PRODUCT DETAILS"
+            android:textColor="#454553" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/product_details"
+            android:layout_alignBottom="@+id/product_details"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="TOTAL"
+            android:textColor="#454553"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rest_name"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/product_details"
+            android:layout_alignStart="@+id/product_details"
+            android:layout_below="@+id/View1"
+            android:layout_marginTop="16dp"
+            android:text="Sufra Restaurant"
+            android:textColor="#29ABE1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/deals"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Deal 1"
+            android:textColor="#29ABE1"
+            android:textSize="16sp"
+            android:layout_alignBaseline="@+id/new_offer"
+            android:layout_alignBottom="@+id/new_offer"
+            android:layout_alignLeft="@+id/rest_name"
+            android:layout_alignStart="@+id/rest_name" />
+
+        <TextView
+            android:id="@+id/old_offer"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:text="USD 45.50"
+            android:textColor="#FF0000"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@+id/rest_name"
+            android:layout_alignBottom="@+id/rest_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/new_offer"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="6dp"
+            android:text="USD 11.99"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_below="@+id/old_offer"
+            android:layout_alignRight="@+id/new_offer_final"
+            android:layout_alignEnd="@+id/new_offer_final" />
+
+        <TextView
+            android:id="@+id/new_offer_final"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/deals"
+            android:layout_alignBottom="@+id/deals"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/new_offer_final"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="#858585" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/view_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buy_field2"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:id="@+id/promo_text"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:text="ADD PROMO CODE"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_alignBottom="@+id/view4"
+            android:layout_alignLeft="@+id/deals"
+            android:layout_alignStart="@+id/deals" />
+
+        <TextView
+            android:id="@+id/apply_text"
+            android:layout_width="65dp"
+            android:layout_height="20dp"
+            android:layout_alignBaseline="@+id/promo_text"
+            android:layout_alignBottom="@+id/promo_text"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="APPLY"
+            android:textColor="#fff"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

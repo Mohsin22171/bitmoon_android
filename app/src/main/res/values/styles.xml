@@ -1,0 +1,127 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">#29ABE1</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorFocus1</item>
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimaryDark">#29ABE1</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/colorFocus1</item>
+    </style>
+
+    <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorHighlight</item>
+        <item name="colorControlNormal">@color/colorHighlight</item>
+        <item name="colorControlActivated">@color/colorHighlight</item>
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+        <item name="android:background">@color/colorHighlight</item>
+        <item name="android:textColor">@color/colorHighlight</item>
+    </style>
+
+    <style name="EditRegisterTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorFocus</item>
+        <item name="colorAccent">@color/colorFocus</item>
+        <item name="colorControlNormal">@color/colorFocus</item>
+        <item name="colorControlActivated">@color/colorFocus</item>
+        <item name="colorControlHighlight">@color/colorFocus1</item>
+    </style>
+
+    <style name="EditLoginTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorHighlight</item>
+        <item name="colorAccent">@color/colorHighlight</item>
+        <item name="colorControlNormal">@color/colorHighlight</item>
+        <item name="colorControlActivated">@color/colorHighlight</item>
+        <item name="colorControlHighlight">@color/colorHighlight</item>
+    </style>
+
+
+
+
+    <style name="MyDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">200%</item>
+        <item name="android:windowMinWidthMinor">200%</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="Theme_Dialog2" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+
+
+
+    <style name="MySpinnerDatePickerStyle" parent="android:Theme.Material.Dialog">
+        <item name="android:datePickerStyle">@style/MySpinnerDatePicker</item>
+    </style>
+
+    <style name="MySpinnerDatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="colorPrimary">@color/hint</item>
+        <item name="colorControlNormal">@color/hint</item>
+        <item name="colorControlActivated">@color/hint</item>
+        <item name="colorControlHighlight">@color/hint</item>
+        <item name="android:background">@color/hint</item>
+        <item name="android:textColor">@color/hint</item>
+        <item name="android:textColorHint">@color/hint</item>
+    </style>
+
+
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/hint</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/hint</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated,
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/hint</item>
+
+        <!-- You can also set colorControlNormal, colorControlActivated
+             colorControlHighlight, and colorSwitchThumbNormal. -->
+    </style>
+
+
+    <style name="PopTheme" parent="android:Theme.Light">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+
+    <style name="FullDialog" parent="android:Theme.Holo.Light">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <style name="activated" parent="android:Theme.Holo">
+        <item name="android:background">@android:color/background_dark</item>
+    </style>
+
+
+</resources>

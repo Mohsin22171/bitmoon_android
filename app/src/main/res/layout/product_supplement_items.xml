@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_centerHorizontal="true">
+
+                <!--   Recycler View Item Row   -->
+                <RelativeLayout
+                    android:id="@+id/linear"
+                    android:layout_width="330dp"
+                    android:layout_height="250dp"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                        <ImageView
+                            android:id="@+id/supplement_header"
+                            android:layout_width="330dp"
+                            android:layout_height="160dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="-5dp"
+                            android:src="@drawable/supp_a" />
+
+                        <TextView
+                            android:id="@+id/supplement_heading"
+                            android:layout_width="fill_parent"
+                            android:layout_height="20dp"
+                            android:layout_below="@+id/supplement_header"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Include Best Hotels in Amman"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/supplement_description"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_below="@+id/supplement_heading"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Great savings on hotels in Amman, Jordan online. Good availibility and great rates.Read hotel reviews and choose the best hotel deal for your stay"
+                            android:textColor="#000" />
+
+
+                </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>

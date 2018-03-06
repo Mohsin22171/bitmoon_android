@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cross"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/rule_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RULE OF USE -- QUICK OVERVIEW"
+        android:textSize="20sp"
+       android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/cross"/>
+
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule_header">
+    </ListView>
+
+
+</RelativeLayout>

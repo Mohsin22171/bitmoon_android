@@ -1,0 +1,48 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    >
+
+    <!--   Recycler View Item Row   -->
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/all_picture" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.4"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

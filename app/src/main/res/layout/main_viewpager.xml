@@ -1,0 +1,64 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/instruction_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec1">
+
+        <TextView
+            android:id="@+id/InsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Instructions"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/MapText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35px"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="16dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/back" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        <!-- ViewPager -->
+        <android.support.v4.view.ViewPager
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:id="@+id/viewPager" />
+        <!-- Footer -->
+        <include layout="@layout/footer"  />
+    </FrameLayout>
+</RelativeLayout>

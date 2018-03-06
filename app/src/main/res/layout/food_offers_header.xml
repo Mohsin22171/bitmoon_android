@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-10dp"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#454553"
+        android:text="قائمة"
+        android:layout_alignTop="@+id/Placeholder"
+        android:layout_toRightOf="@+id/Placeholder"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="14dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/placeholder"
+        android:id="@+id/Placeholder"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="15dp"
+        android:layout_height="14dp"
+        android:src="@drawable/arrow"
+        android:layout_alignBottom="@+id/loc_txt"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DCDCDC"
+        android:layout_below="@+id/arrow"
+        android:layout_marginTop="10dp"
+        android:id="@+id/view6" />
+
+    <TextView
+        android:id="@+id/offers_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/Placeholder"
+        android:layout_alignStart="@+id/Placeholder"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/view6"
+        android:layout_marginTop="10dp"
+        android:text="OFFERS CONTSINED IN PRODUCT"
+        android:textColor="#454553"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/offers_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/Placeholder"
+        android:layout_alignStart="@+id/Placeholder"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/view6"
+        android:layout_marginTop="18dp"
+        android:layout_alignTop="@+id/offers_txt"
+        android:text="AMMAN 2017"
+        android:textColor="#454553"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/loc_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/address"
+        android:layout_alignBottom="@+id/address"
+        android:layout_alignRight="@+id/arrow"
+        android:layout_marginRight="21dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Location"
+        android:textColor="#454553" />
+
+</RelativeLayout>

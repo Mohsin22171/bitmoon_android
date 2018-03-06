@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/food_icon"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/melograno"/>
+
+    <TextView
+        android:id="@+id/food_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="Sufra Restaurant"
+        android:textSize="16sp"
+        android:textColor="#454553"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/food_icon"
+        android:layout_toEndOf="@+id/food_icon" />
+
+
+
+    <TextView
+        android:id="@+id/food_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/food_hotel"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"/>
+
+    <ImageView
+        android:id="@+id/logoo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/food_icon"
+        android:layout_below="@+id/food_hotel"
+        android:layout_toRightOf="@+id/food_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+
+</RelativeLayout>
